@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <extension key="be.smartbe" type="module">
   <file>smartbe</file>
-  <name>FIXME</name>
-  <description>FIXME</description>
-  <license>FIXME</license>
+  <name>smartbe.be customisations</name>
+  <description>This is a misc extension to shove every customisation that is unlikely to be generic enough to be used elsewhere.</description>
+  <license>aGPL3</license>
   <maintainer>
-    <author>FIXME</author>
-    <email>FIXME@example.com</email>
+    <author>xavier</author>
+    <email>smartbe@tttp.eu</email>
   </maintainer>
-  <releaseDate>2012-12-13</releaseDate>
+  <releaseDate>2012-12-12</releaseDate>
+<downloadUrl>https://github.com/tttp/smartbe/zipball/master</downloadUrl>
   <version>1.0</version>
-  <develStage>alpha</develStage>
+  <develStage>beta</develStage>
   <compatibility>
     <ver>4.2</ver>
   </compatibility>
-  <comments>This is a new, undeveloped module</comments>
+  <comments>Probably not going to be super userful for anyone else, but is shared because why not?</comments>
   <civix>
     <namespace>CRM/Smartbe</namespace>
   </civix>
