@@ -2,11 +2,17 @@
 
 require_once 'smartbe.civix.php';
 
+//CRM_Core_Resources::singleton()->addStyleFile('com.example.foo', 'bar.css');
+
 /**
  * Implementation of hook_civicrm_config
  */
 function smartbe_civicrm_config(&$config) {
   _smartbe_civix_civicrm_config($config);
+}
+
+function smartbe_civicrm_dashboard( $contactID, &$contentPlacement ) {
+  CRM_Core_Resources::singleton()->addStyle('#civicrm-dashboard h1 { font-size:12px; }');
 }
 
 /**
