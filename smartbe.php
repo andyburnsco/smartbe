@@ -12,7 +12,13 @@ function smartbe_civicrm_config(&$config) {
 }
 
 function smartbe_civicrm_dashboard( $contactID, &$contentPlacement ) {
-  CRM_Core_Resources::singleton()->addStyle('#civicrm-dashboard h1 { font-size:12px; }');
+  CRM_Core_Resources::singleton()->addStyle(<<<EOT
+#civicrm-dashboard h1 { font-size:12px; }
+.column {float:none;}
+.column-0,.column-1 {width:100%;}
+
+EOT
+);
 }
 
 /**
