@@ -15,7 +15,7 @@ function smartbe_civicrm_dashboard( $contactID, &$contentPlacement ) {
   CRM_Core_Resources::singleton()->addStyle(<<<EOT
 #civicrm-dashboard h1 { font-size:12px; }
 #crm-container .column {float:none;padding-bottom:0;}
-#crm-container .column-0, #crm-container .column-1 {width:100%;}
+#crm-container .column-0, #crm-container .column-1 {width:50%;}
 
 EOT
 );
