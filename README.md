@@ -1,1 +1,1 @@
-Style Civi Dashboard. Make 2 Columns.
+Style Civi Dashboard. Make 1 Column.
