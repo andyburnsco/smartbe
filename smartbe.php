@@ -13,25 +13,18 @@ function smartbe_civicrm_config(&$config) {
 
 function smartbe_civicrm_dashboard( $contactID, &$contentPlacement ) {
   CRM_Core_Resources::singleton()->addStyle(<<<EOT
-// #civicrm-dashboard h1 { font-size:12px; }
-// #crm-container .column {float:none;padding-bottom:0;}
-
-/* desktop 2 columns */
-@media screen and (min-width: 1080px){
-#crm-container .column-0, #crm-container .column-1 {width:50%;}
-}
-
-/*mobile and tablet 1 column */
-@media screen and (max-width: 1080px){
-#crm-container .column-0, #crm-container .column-1 {width:100%;}
+/* 1 column */
+.crm-container .crm-flex-box {
+    display: inherit;
 }
 
 #crm-container #civicrm-dashboard .widget-wrapper {
-margin: 0px 20px 30px 10px;
+        margin: 0px 20px 30px 10px;
 }
 
-body #crm-container #civicrm-dashboard .widget-wrapper, body #crm-container #civicrm-dashboard .widget-wrapper.db-hover-handle {
-box-shadow:1px 1px 4px 1px rgba(0,0,0,0.2);
+div.crm-container .crm-dashlet {
+        box-shadow:1px 1px 4px 1px rgba(0,0,0,0.2);
+        margin: 0px 20px 30px 20px;
 }
 
 EOT
